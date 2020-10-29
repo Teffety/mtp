@@ -35,8 +35,8 @@ export default {
     },
     checking(event, name)
     {
-      this[name] = event
-      this.isActive = this.name && this.password
+      this[name] = event;
+      this.isActive = this.name && this.password;
     }
   },
   watch:{

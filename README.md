@@ -1,5 +1,11 @@
 # mtp
+Любой логин и пароль
+При войти сохраняется в LocalStorage token
+Если в LocalStorage токен есть сразу заходит
+Кнопка Clear Storage очищает storage, но не выходит из карты( потому что это не logout )
 
+GeoJson использовал из примера тестового задания
+Axios не подключал
 ## Project setup
 ```
 npm install

@@ -12,11 +12,13 @@ export default {
   {
     setAccessToken( { commit, state} )
     {
+      // Типа была загрузка и сохраняем данные в accessUserToken, после чего записываем в сторе
       commit('setData', { path:'accessUserToken', value: state.userToken });
       localStorage.setItem('token', state.userToken)
     },
     getFromStrage({ commit })
     {
+      // если есть токен то записываем, если бы был живой сервер, то сперва проверили и обновили токен
       commit('setData', { path:'accessUserToken', value: localStorage.getItem('token') })
     }
   },
