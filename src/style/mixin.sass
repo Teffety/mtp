@@ -1,0 +1,11 @@
+
+=media ($max: false, $min: false)
+	@if ($max and $min)
+		@media only screen and (max-width: $max) and (min-width: $min)
+			@content
+	@else if ($max)
+		@media only screen and (max-width: $max)
+			@content
+	@else if ($min)
+		@media only screen and (min-width: $min)
+			@content
